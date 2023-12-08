@@ -1,4 +1,6 @@
 using System.Globalization;
+using System.Reflection;
+using CultureTest.Resources;
 using CultureTest.Services;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
@@ -8,7 +10,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-builder.Services.AddMvc().AddViewLocalization();
+builder.Services.AddMvc().AddViewLocalization().AddDataAnnotationsLocalization(options =>
+{
+    options.DataAnnotationLocalizerProvider = (type, factory) =>
+    {
+        var assemblyName = new AssemblyName(typeof(CommonResources).GetTypeInfo().Assembly.FullName!);
+        return factory.Create(nameof(CommonResources), assemblyName.Name!);
+    };
+});
 
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 

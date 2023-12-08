@@ -11,43 +11,43 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="Localisation" xml:space="preserve">
-        <value>Lokalisierung</value>
+    <data name="Contact" xml:space="preserve">
+        <value>Contact</value>
     </data>
     <data name="Privacy" xml:space="preserve">
-        <value>Privatsphäre</value>
-    </data>
-    <data name="Contact" xml:space="preserve">
-        <value>Kontakt</value>
+        <value>Privacy</value>
     </data>
     <data name="Contact Us" xml:space="preserve">
-        <value>Kontaktieren Sie Uns</value>
+        <value>Contact Us</value>
     </data>
     <data name="Email" xml:space="preserve">
-        <value>E-Mail</value>
+        <value>Email</value>
     </data>
     <data name="Email Required" xml:space="preserve">
-        <value>Eine gültige E-Mail ist erforderlich</value>
+        <value>Email Required</value>
     </data>
     <data name="First Name" xml:space="preserve">
-        <value>Vorname</value>
+        <value>First Name</value>
     </data>
     <data name="First Name Required" xml:space="preserve">
-        <value>Ein Vorname ist erforderlich</value>
+        <value>First Name Required</value>
     </data>
     <data name="Last Name" xml:space="preserve">
-        <value>Nachname</value>
+        <value>Last Name</value>
     </data>
     <data name="Last Name Required" xml:space="preserve">
-        <value>Ein Nachname ist erfordlich</value>
+        <value>Last Name Required</value>
+    </data>
+    <data name="Localisation" xml:space="preserve">
+        <value>Localization</value>
     </data>
     <data name="Message" xml:space="preserve">
-        <value>Nachricht</value>
+        <value>Message</value>
     </data>
     <data name="Message Required" xml:space="preserve">
-        <value>Eine Nachricht ist erforderlich</value>
+        <value>Message Required</value>
     </data>
     <data name="Submit" xml:space="preserve">
-        <value>Senden</value>
+        <value>Submit</value>
     </data>
 </root>
