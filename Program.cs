@@ -1,4 +1,5 @@
 using System.Globalization;
+using CultureTest.Services;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
 
@@ -29,6 +30,8 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     options.SupportedCultures = supportedCultures;
     options.SupportedUICultures = supportedCultures;
 });
+
+builder.Services.AddSingleton<CommonLocalizationService>();
 
 var app = builder.Build();
 
